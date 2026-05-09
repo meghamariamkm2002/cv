@@ -8,6 +8,13 @@
 <!-- For Abstract display -->
 <script>
     function showTab(tab) {
+  document.getElementById("about").style.display =
+    tab === "about" ? "block" : "none";
+
+  document.getElementById("publications").style.display =
+    tab === "publications" ? "block" : "none";
+}
+    function showTab(tab) {
       document.getElementById("about").style.display =
         tab === "about" ? "block" : "none";
     
@@ -472,16 +479,6 @@ function toggleAbstract(id) {
 
   </div>
 </div>
-
-<script>
-function showTab(tab) {
-  document.getElementById("about").style.display =
-    tab === "about" ? "block" : "none";
-
-  document.getElementById("publications").style.display =
-    tab === "publications" ? "block" : "none";
-}
-</script>
 
 </body>
 </html>
